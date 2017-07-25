@@ -1,0 +1,333 @@
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+!* HTML5 display-role reset for older browsers *!
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 960px;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    background: #000000 url("../img/tint.jpg") no-repeat center top;
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-header {
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+nav {
+    float: left;
+    width: 780px;
+}
+.main-header li {
+    display: inline-block;
+    vertical-align: top;
+}
+.main-navigation a {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+.main-header a:hover {
+    background-color: #242424;
+}
+.login {
+    display: inline-block;
+    float: right;
+    position: relative;
+    max-width: 140px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px 20px 25px 50px;
+}
+.login:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/sprite-icon.png") no-repeat;
+    opacity: 0.3;
+}
+.login:hover::before {
+    opacity: 1;
+}
+.logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto 25px auto;
+}
+.features {
+    margin-bottom: 80px;
+}
+.features-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 15px;
+    text-align: center;
+}
+.features-item:last-child {
+    margin-right: 0;
+}
+.features-name {
+    display: block;
+    position: relative;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+}
+.features-name::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    /*margin: 0 auto;*/
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+.features-item p {
+    padding: 0 15px;
+}
+.content {
+    min-height: 430px;
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    color: #000000;
+    background: url("../img/content-shadow.png") no-repeat center,
+            #f8f5f2 url("../img/pattern-content.jpg") repeat;
+}
+.content-left {
+    float: left;
+    width: 380px;
+    min-height: 330px;
+}
+.content-right {
+    float: right;
+    width: 300px;
+    min-height: 330px;
+}
+.content h2 {
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+.content-news {
+    list-style: none;
+    padding-right: 40px;
+}
+.content-news li {
+    margin-bottom: 25px;
+}
+.content-news time {
+    text-transform: none;
+    margin-bottom: 25px;
+}
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 33px;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 16px;
+}
+.button:hover,
+.button:active {
+    background-color: #663d15;
+}
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.button.disabled:hover,
+.button:disabled:hover {
+    background-color: #000000;
+}
+.gallery {
+    position: relative;
+    height: 280px;
+
+}
+.gallery-content {
+    margin: 0;
+    padding: 0;
+    height: 164px;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+.gallery .button {
+    position: absolute;
+    width: 140px;
+    margin: 0;
+    bottom: 0;
+}
+.gallery-prev {
+    left: 0;
+}
+.gallery-next {
+    right: 0;
+}
+.reservation-form {
+    margin-top: 20px;
+}
+.reservation-form input {
+    float: left;
+    display: inline-block;
+    width: 106px;
+    margin: 0 20px 20px 0;
+    padding: 7px 15px;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+.reservation-form input:nth-child(2n) {
+    margin-right: 0;
+}
+.reservation-form input:focus {
+    border: 2px solid #663d15;
+}
+.send {
+    clear: both;
+    width: 100%;
+}
+.main-footer {
+    margin-top: 65px;
+    padding: 60px 0 40px 0;
+    background-color: #262626;
+}
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    min-height: 90px;
+}
+.footer-contacts a {
+    color: #ffffff;
+}
+.footer-social {
+    float: left;
+    width: 180px;
+    min-height: 90px;
+    text-align: center;
+}
+.social-button {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    font-size: 0;
+    vertical-align: top;
+}
+.social-button:hover {
+    background-color: #ffffff;
+}
+.btn-fb {
+     background-position: 15px 10px;
+}
+.btn-vk {
+    background-position: -35px 10px;
+}
+.btn-inst {
+    background-position: -92px 10px;
+}
+.btn-fb:hover {
+    background-position: 15px -50px;
+}
+.btn-vk:hover {
+    background-position: -35px -50px;
+}
+.btn-inst:hover {
+    background-position: -92px -50px;
+}
+.footer-feedback {
+    float: right;
+    width: 180px;
+    min-height: 90px;
+}
