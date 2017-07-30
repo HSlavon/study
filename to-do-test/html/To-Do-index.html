@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <title>To Do</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__nav">
+            <span class="header__span--first">To Do</span>
+            <button class="page-header__nav--btn btn"></button>
+            <span class="header__span--second">Do list</span>
+        </div>
+        <div class="page-header__wrapper">
+            <form class="page-header__search" action="#" method="post">
+                <input class="search--input" type="text">
+                <input class="search--btn btn" type="button">
+            </form>
+            <div class="page-header__profile">
+                <a class="page-header--messages" href=""></a>
+                <img src="../image/profile-photo.png" width="32px" height="32px" alt="profile-photo">
+                <ul class="page-header__profile--settings">
+                    <li>Setting 1</li>
+                    <li>Setting 2</li>
+                    <li>Setting 3</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <nav class="main-nav--wrapper">
+            <ul class="main-nav__menu">
+                <li>
+                    <a class="nav--menu " href="#">
+                        <div class="menu--logo menu--logo1"></div>
+                        <span class="menu--item">Project 1</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav--menu " href="#">
+                        <div class="menu--logo menu--logo2"></div>
+                        <span class="menu--item">Project 2</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav--menu " href="#">
+                        <div class="menu--logo menu--logo3"></div>
+                        <span class="menu--item">Project 3</span>
+                    </a>
+                </li>
+                <li >
+                    <a class="nav--menu " href="#">
+                        <div class="menu--logo menu--logo4"></div>
+                        <span class="menu--item">Project 4</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav--menu " href="#">
+                        <div class="menu--logo menu--logo5"></div>
+                        <span class="menu--item">Project 5</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-wrapper__content">
+            <div class="main-task-manager">
+                <div class="task-manager">
+                    <div class="task-manager__menu">
+                        <h3>ПРИОРИТЕТ 1</h3>
+                        <button class="manager__menu--add btn"></button>
+                        <ul class="manager__menu--list">
+                            <li class="manager__menu--item-first"></li>
+                            <li class="manager__menu--item">1</li>
+                            <li class="manager__menu--item">2</li>
+                        </ul>
+                    </div>
+                    <form class="task-manager__search" method="post" action="#">
+                        <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                        <input class="task-manager__search--check btn" type="button">
+                        <input class="task-manager__search--clear btn" type="reset" value="">
+                    </form>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">14</a>
+                        <a class="card__apps--files" href="#">8 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">1</a>
+                        <a class="card__apps--files" href="#" style="display: none">1 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status"  style="display: none">
+                        <div class="card__head-status--block head-status--red"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">5</a>
+                        <a class="card__apps--files" href="#">3 file</a>
+                    </div>
+                </div>
+            </div>
+        <div class="main-task-manager">
+            <div class="task-manager">
+                <div class="task-manager__menu">
+                    <h3>ПРИОРИТЕТ 2</h3>
+                    <button class="manager__menu--add btn"></button>
+                    <ul class="manager__menu--list">
+                        <li class="manager__menu--item-first"></li>
+                        <li class="manager__menu--item">1</li>
+                        <li class="manager__menu--item">2</li>
+                    </ul>
+                </div>
+                <form class="task-manager__search" method="post" action="#">
+                    <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                    <input class="task-manager__search--check btn" type="button">
+                    <input class="task-manager__search--clear btn" type="reset" value="">
+                </form>
+            </div>
+            <div class="task-manager__card">
+                <div class="card__head-status">
+                    <div class="card__head-status--block head-status--red" style="display: none"></div>
+                    <div class="card__head-status--block head-status--orange"></div>
+                    <div class="card__head-status--block head-status--green" style="display: none"></div>
+                    <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                </div>
+                <h4>Name name</h4>
+                <div class="card__icon-gallery">
+                    <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                    <img src="../image/card-icon2.png" width="20px" height="20px">
+                    <img src="../image/card-icon3.png" width="20px" height="20px">
+                    <img src="../image/card-icon4.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px">
+                    <div class="card__icon-gallery--status">+25</div>
+                </div>
+                <div class="card-status status--first" style="display: none">
+                    <div class="card-status--filling" style="width: 40%"></div>
+                    <span>2/5</span>
+                </div>
+                <div class="card-status status--second" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/2</span>
+                </div>
+                <div class="card-status status--third">
+                    <div class="card-status--filling"></div>
+                    <span>0/3</span>
+                </div>
+                <div class="card-status status--fourth" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/4</span>
+                </div>
+                <div class="card-status status--full" style="display: none">
+                    <div class="card-status--filling" style="width: 100%"></div>
+                    <span class="card-status--full"></span>
+                </div>
+                <div class="card__apps">
+                    <a class="card__apps--message" href="#">7</a>
+                    <a class="card__apps--files" href="#">1 file</a>
+                </div>
+            </div>
+            <div class="task-manager__card">
+                <div class="card__head-status">
+                    <div class="card__head-status--block head-status--red" style="display: none"></div>
+                    <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                    <div class="card__head-status--block head-status--green"></div>
+                    <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                </div>
+                <h4>Name name</h4>
+                <div class="card__icon-gallery">
+                    <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                    <img src="../image/card-icon2.png" width="20px" height="20px">
+                    <img src="../image/card-icon3.png" width="20px" height="20px">
+                    <img src="../image/card-icon4.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                    <div class="card__icon-gallery--status" style="display: none">+25</div>
+                </div>
+                <div class="card-status status--first" style="display: none">
+                    <div class="card-status--filling" style="width: 40%"></div>
+                    <span>2/5</span>
+                </div>
+                <div class="card-status status--second" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/2</span>
+                </div>
+                <div class="card-status status--third" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/3</span>
+                </div>
+                <div class="card-status status--fourth" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/4</span>
+                </div>
+                <div class="card-status status--full">
+                    <div class="card-status--filling" style="width: 100%"></div>
+                    <span class="card-status--full"></span>
+                </div>
+                <div class="card__apps">
+                    <a class="card__apps--message" href="#">7</a>
+                    <a class="card__apps--files" href="#">15 file</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-task-manager">
+            <div class="task-manager">
+                <div class="task-manager__menu">
+                    <h3>ПРИОРИТЕТ 3</h3>
+                    <button class="manager__menu--add btn"></button>
+                    <ul class="manager__menu--list">
+                        <li class="manager__menu--item-first"></li>
+                        <li class="manager__menu--item">1</li>
+                        <li class="manager__menu--item">2</li>
+                    </ul>
+                </div>
+                <form class="task-manager__search" method="post" action="#">
+                    <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                    <input class="task-manager__search--check btn" type="button">
+                    <input class="task-manager__search--clear btn" type="reset" value="">
+                </form>
+            </div>
+            <div class="task-manager__card">
+                <div class="card__head-status">
+                    <div class="card__head-status--block head-status--red" style="display: none"></div>
+                    <div class="card__head-status--block head-status--orange"></div>
+                    <div class="card__head-status--block head-status--green" style="display: none"></div>
+                    <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                </div>
+                <h4>Name name</h4>
+                <div class="card__icon-gallery">
+                    <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                    <img src="../image/card-icon2.png" width="20px" height="20px">
+                    <img src="../image/card-icon3.png" width="20px" height="20px">
+                    <img src="../image/card-icon4.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px">
+                    <div class="card__icon-gallery--status">+8</div>
+                </div>
+                <div class="card-status status--first" style="display: none">
+                    <div class="card-status--filling" style="width: 40%"></div>
+                    <span>2/5</span>
+                </div>
+                <div class="card-status status--second" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/2</span>
+                </div>
+                <div class="card-status status--third">
+                    <div class="card-status--filling"></div>
+                    <span>0/3</span>
+                </div>
+                <div class="card-status status--fourth" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/4</span>
+                </div>
+                <div class="card-status status--full" style="display: none">
+                    <div class="card-status--filling" style="width: 100%"></div>
+                    <span class="card-status--full"></span>
+                </div>
+                <div class="card__apps">
+                    <a class="card__apps--message" href="#">2</a>
+                    <a class="card__apps--files" href="#">1 file</a>
+                </div>
+            </div>
+            <div class="task-manager__card">
+                <div class="card__head-status">
+                    <div class="card__head-status--block head-status--red" style="display: none"></div>
+                    <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                    <div class="card__head-status--block head-status--green"></div>
+                    <div class="card__head-status--block head-status--blue"></div>
+                </div>
+                <h4>Name name</h4>
+                <div class="card__icon-gallery">
+                    <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                    <img src="../image/card-icon2.png" width="20px" height="20px">
+                    <img src="../image/card-icon3.png" width="20px" height="20px">
+                    <img src="../image/card-icon4.png" width="20px" height="20px">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                    <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                    <div class="card__icon-gallery--status" style="display: none">+25</div>
+                </div>
+                <div class="card-status status--first" style="display: none">
+                    <div class="card-status--filling" style="width: 40%"></div>
+                    <span>2/5</span>
+                </div>
+                <div class="card-status status--second" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/2</span>
+                </div>
+                <div class="card-status status--third" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/3</span>
+                </div>
+                <div class="card-status status--fourth" style="display: none">
+                    <div class="card-status--filling"></div>
+                    <span>0/4</span>
+                </div>
+                <div class="card-status status--full" style="display: none">
+                    <div class="card-status--filling" style="width: 100%"></div>
+                    <span class="card-status--full"></span>
+                </div>
+                <div class="card__checkbox">
+                    <div class="card__checkbox--container">
+                        <input class="card__checkbox--check" type="checkbox" checked="checked" id="check-first" >
+                        <label class="checkbox--label" for="check-first">Update links in profile setting</label>
+                    </div>
+                    <div class="card__checkbox--container">
+                        <input class="card__checkbox--check" type="checkbox" id="check-second">
+                        <label class="checkbox--label" for="check-second">The setting icon should be...</label>
+                    </div>
+                </div>
+                <div class="card__apps">
+                    <a class="card__apps--message" href="#">7</a>
+                    <a class="card__apps--files" href="#" style="display: none">15 file</a>
+                </div>
+            </div>
+            </div>
+            <div class="main-task-manager">
+                <div class="task-manager">
+                    <div class="task-manager__menu">
+                        <h3>ПРИОРИТЕТ 4</h3>
+                        <button class="manager__menu--add btn"></button>
+                        <ul class="manager__menu--list">
+                            <li class="manager__menu--item-first"></li>
+                            <li class="manager__menu--item">1</li>
+                            <li class="manager__menu--item">2</li>
+                        </ul>
+                    </div>
+                    <form class="task-manager__search" method="post" action="#">
+                        <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                        <input class="task-manager__search--check btn" type="button">
+                        <input class="task-manager__search--clear btn" type="reset" value="">
+                    </form>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">14</a>
+                        <a class="card__apps--files" href="#">8 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status" style="display: none">
+                        <div class="card__head-status--block head-status--red"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">5</a>
+                        <a class="card__apps--files" href="#">3 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">1</a>
+                        <a class="card__apps--files" href="#" style="display: none">3 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">1</a>
+                        <a class="card__apps--files" href="#" style="display: none">3 file</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-task-manager">
+                <div class="task-manager">
+                    <div class="task-manager__menu">
+                        <h3>ПРИОРИТЕТ 5</h3>
+                        <button class="manager__menu--add btn"></button>
+                        <ul class="manager__menu--list">
+                            <li class="manager__menu--item-first"></li>
+                            <li class="manager__menu--item">1</li>
+                            <li class="manager__menu--item">2</li>
+                        </ul>
+                    </div>
+                    <form class="task-manager__search" method="post" action="#">
+                        <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                        <input class="task-manager__search--check btn" type="button">
+                        <input class="task-manager__search--clear btn" type="reset" value="">
+                    </form>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green" style="display: none"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px">
+                        <div class="card__icon-gallery--status">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">7</a>
+                        <a class="card__apps--files" href="#">1 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">7</a>
+                        <a class="card__apps--files" href="#">15 file</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-task-manager">
+                <div class="task-manager">
+                    <div class="task-manager__menu">
+                        <h3>ПРИОРИТЕТ 6</h3>
+                        <button class="manager__menu--add btn"></button>
+                        <ul class="manager__menu--list">
+                            <li class="manager__menu--item-first"></li>
+                            <li class="manager__menu--item">1</li>
+                            <li class="manager__menu--item">2</li>
+                        </ul>
+                    </div>
+                    <form class="task-manager__search" method="post" action="#">
+                        <input class="task-manager__search--input search--input" type="text" placeholder="Enter name of new card...">
+                        <input class="task-manager__search--check btn" type="button">
+                        <input class="task-manager__search--clear btn" type="reset" value="">
+                    </form>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange"></div>
+                        <div class="card__head-status--block head-status--green" style="display: none"></div>
+                        <div class="card__head-status--block head-status--blue" style="display: none"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px">
+                        <div class="card__icon-gallery--status">+8</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">2</a>
+                        <a class="card__apps--files" href="#">1 file</a>
+                    </div>
+                </div>
+                <div class="task-manager__card">
+                    <div class="card__head-status">
+                        <div class="card__head-status--block head-status--red" style="display: none"></div>
+                        <div class="card__head-status--block head-status--orange" style="display: none"></div>
+                        <div class="card__head-status--block head-status--green"></div>
+                        <div class="card__head-status--block head-status--blue"></div>
+                    </div>
+                    <h4>Name name</h4>
+                    <div class="card__icon-gallery">
+                        <img class="icon-gallery--first" src="../image/card-icon1.png" width="20px" height="20px">
+                        <img src="../image/card-icon2.png" width="20px" height="20px">
+                        <img src="../image/card-icon3.png" width="20px" height="20px">
+                        <img src="../image/card-icon4.png" width="20px" height="20px">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <img src="../image/card-icon-default.png" width="20px" height="20px" style="display: none">
+                        <div class="card__icon-gallery--status" style="display: none">+25</div>
+                    </div>
+                    <div class="card-status status--first" style="display: none">
+                        <div class="card-status--filling" style="width: 40%"></div>
+                        <span>2/5</span>
+                    </div>
+                    <div class="card-status status--second" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/2</span>
+                    </div>
+                    <div class="card-status status--third" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/3</span>
+                    </div>
+                    <div class="card-status status--fourth" style="display: none">
+                        <div class="card-status--filling"></div>
+                        <span>0/4</span>
+                    </div>
+                    <div class="card-status status--full" style="display: none">
+                        <div class="card-status--filling" style="width: 100%"></div>
+                        <span class="card-status--full"></span>
+                    </div>
+                    <div class="card__checkbox">
+                        <div class="card__checkbox--container">
+                            <input class="card__checkbox--check" type="checkbox" checked="checked" id="check--first" >
+                            <label class="checkbox--label" for="check--first">Update links in profile setting</label>
+                        </div>
+                        <div class="card__checkbox--container">
+                            <input class="card__checkbox--check" type="checkbox" id="check--second">
+                            <label class="checkbox--label" for="check--second">The setting icon should be...</label>
+                        </div>
+                    </div>
+                    <div class="card__apps">
+                        <a class="card__apps--message" href="#">7</a>
+                        <a class="card__apps--files" href="#" style="display: none">15 file</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
